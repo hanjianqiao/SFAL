@@ -1,0 +1,18 @@
+func hello(){
+	int i; int j; double v; double x;
+	double[100] a;
+	i = 100.99;
+	i = 0xf;
+	i = 011;
+	v = 0.2e3;
+	while(true){
+		do {i = i+1;
+		}while(a[i]<=(v + 5));
+		do j = j-1;while(a[j]>=v);
+		if(i >= j)break;
+		x=a[i];
+		j = j + 2;
+		j = j - 2;
+		a[j]=a[j + 1];
+	}
+}

@@ -1,0 +1,36 @@
+		GLOBAL	hello
+_hello:
+		DATA	a[10]
+		LOCAL	t0	AS	1
+		LOCAL	t1	AS	2
+		LOCAL	t2	AS	3
+		LOCAL	t3	AS	4
+		LOCAL	t4	AS	5
+		LOCAL	t5	AS	6
+		LOCAL	t6	AS	7
+		LOCAL	t7	AS	8
+L1:
+			PUSH	2
+		PUSH	1
+		MUL
+		LSTORE	t1
+		POP	1
+			PUSH	2
+		PUSH	1
+		MUL
+		LSTORE	t2
+		POP	1
+			PUSH	2
+		PUSH	1
+		MUL
+		LSTORE	t3
+		POP	1
+			PUSH	a
+		LPUSHP	t1
+		ADD
+				PUSH	2
+		STOREV
+		POP	2
+L2:
+		HALT
+
