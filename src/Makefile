@@ -8,3 +8,6 @@ all:
 run:
 	make all
 	java main.Main < in.txt >out.txt
+
+clean:
+	rm out.txt
